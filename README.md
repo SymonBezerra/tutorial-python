@@ -14,14 +14,24 @@ Neste módulo, você aprenderá as estruturas de programação básicas da lingu
 
 ### Módulo II - Programação Orientada a Objetos
 
-Como aprofundamento, aprenderemos sobre a programação orientada a objetos na linguagem Python, paradigma este que norteia praticamente toda a linguagem. Neste módulo, será abordado
+Como aprofundamento, aprenderemos sobre a programação orientada a objetos na linguagem Python, paradigma este que norteia praticamente toda a linguagem. Neste módulo, serão abordados desde os fundamentos da POO até especificidades da linguagem Python, que implementa este paradigma de maneira bem peculiar.
 
 ### Módulo III - Ambiente de Desenvolvimento
 
-Por fim, prepararemos o estudante para construir ambientes virtuais de desenvolvimento, e também apresentaremos algumas módulos utilitários da linguagem Python.
+Como próximo passo, prepararemos o estudante para construir ambientes virtuais de desenvolvimento, e também apresentaremos algumas módulos utilitários da linguagem Python. 
+
+### Módulo IV - Estrutura de Dados
+
+Para um último passo em uma trilha básica sobre lógica de programação, teremos um módulo apenas sobre estrutura de dados, conteúdo indispensável para qualquer desenvolvedor iniciante. Veremos as principais estruturas de dados e suas aplicações.
 
 ## Trilha Python para Dados
 
 ### Módulo I - Fundamentos de SQL e Banco de Dados
 
 ### Módulo II - Análise de Dados
+
+## Trilha Python para Web (Flask)
+
+### Módulo I - Fundamentos de HTML-CSS-JS
+
+### Módulo II - Fundamentos de Flask
