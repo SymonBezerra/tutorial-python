@@ -1,12 +1,14 @@
 # Curso de Python - Symon Bezerra
 
+**(EM ANDAMENTO)**
+
 Seja bem vindo ao meu curso de programação em Python! Aqui, você aprenderá conhecimentos sobre programação, lógica e fundamentos computacionais diversos para se tornar um desenvolvedor Python completo!
 
 > Todo o curso está estruturado em arquivos *markdown* (`.md`), que podem ser visualizados a partir do próprio GitHub ou de alguma IDE, como o Visual Studio Code.
 
 O curso contará com alguns módulos e trilhas (*work in progress*, portanto novos módulos poderão ser adicionados):
 
-## Trilha Python
+## Trilha Python Iniciante
 
 ### Módulo I → Python Básico
 
