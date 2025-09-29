@@ -55,6 +55,8 @@ elif number2 % 2 == 0: # se o número for par
     print('Segundo número é par')
 ```
 
+> O operador `==` é um operador relacional de comparação (compara se dois valores são iguais).
+
 Ou seja, se o valor de `number` for maior que zero, a segunda instrução, que é um `elif`, será simplesmente ignorada. O mais adequado, neste caso, seria usarmos duas instruções `if`:
 
 ```python
@@ -69,7 +71,7 @@ if number2 % 2 == 0:
 
 ### Operadores Lógicos
 
-Vimos no último tutorial os operadores aritméticos, e mais acima, também os operadores relacionais `>`, `<`, `>=` e `<=`. Existem ainda os **operadores lógicos**, criados para trabalharmos com valores booleanos. São eles as palavras reservadas `and`, `or`, e `not`.
+Vimos no último tutorial os operadores aritméticos, e mais acima, também os operadores relacionais `>`, `<`, `>=`, `<=` e `==`. Existem ainda os **operadores lógicos**, criados para trabalharmos com valores booleanos. São eles as palavras reservadas `and`, `or`, e `not`.
 
 Se precisamos utilizar mais de uma condição lógica para uma estrutura condicional e ambas necessitam ser verdadeiras, então podemos utilizar o operador `and` ("e"):
 
@@ -80,8 +82,6 @@ number2 = 0
 if number1 > 0 and number2 > 0: # ambas as condições precisam ser True
     print('Dois números positivos')
 ```
-
-> O operador `==` é um operador de comparação (compara se dois valores são iguais).
 
 No entanto, se precisamos apenas de uma condição verdadeira, podemos utilizar o operador `or` ("ou"):
 
@@ -117,5 +117,19 @@ if not (number1 > 0 and number2 > 0):
 ```
 
 > Fazendo um paralelo com a lógica de conjuntos matemáticos, `and` seria o equivalente de intersecção e `or`, o equivalente de união.
+
+Existe ainda um último operador relacional: a palavra chave `is`. Na prática, ele é um comparador de igualdade como o operador `==`. No entanto, ele também compara **endereços de memória**. Na prática:
+
+```python
+value1 = 1000
+value2 = 1000
+
+print(value1 is value2) # falso, duas referências de memória diferentes
+print(value1 == value2) # verdadeiro, ambos os valores são 1000
+```
+
+Na prática, podemos utilizar o operador `is` se queremos conferir se a referência está sendo feita a um ponteiro de memória específico. Falaremos mais sobre ponteiros de memória e referências nos tutoriais sobre funções, mas por enquanto, um caso interessante de uso do operador `is` é para comparar valores com `None`, já que o `None` segue o padrão *singleton* (ou seja, todo valor `None` aponta para um único endereço de memória).
+
+> Atenção: alguns valores, como números inteiros no intervalo $ [-5, 256] $ são colocados em um cache, por razões de performance. Comparar valores com o operador `is` para valores em cache sempre resultarão em `True`. Use com cautela.
 
 Neste tutorial, vimos sobre as estruturas condicionais e como trabalhar melhor com os valores booleanos. Mas os valores booleanos podem ativar outro tipo de estrutura: as estruturas de repetição. Veremos mais sobre isso no próximo tutorial. Bons estudos!

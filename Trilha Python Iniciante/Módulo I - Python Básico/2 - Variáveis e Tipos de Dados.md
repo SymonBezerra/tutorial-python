@@ -206,4 +206,12 @@ print("\tExemplo de tabulação")
 print("Módulo I - Python Básico\\Trilha Python Iniciante") # para escrever o próprio caractere `\`
 ```
 
+### O valor *None*
+
+Existe ainda um último tipo de dado, o valor `None`: ele representa um valor vazio. Na prática, ele é uma referência a um ponteiro de memória inexistente. Utilizar valores `None` em operações pode resultar em erros, fique atento.
+
+```python
+value = None
+```
+
 No próximo tutorial, começaremos a dar usos mais práticos para as variáveis que aprendemos hoje através das estruturas condicionais.
