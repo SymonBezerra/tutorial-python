@@ -53,33 +53,6 @@ while n <= 20:
 
 > Experimente fazer o mesmo *loop* usando um comando `for`.
 
-## O conceito de escopo
-
-Já que vimos dois tipos de estruturas de controle em Python, está na hora de introduzirmos um conceito importante para gerenciamento de variáveis: o **escopo**. O escopo de uma variável depende de onde ela foi declarada. Se ela for declarada fora de um bloco de código, será **global** para aquele *script*. Caso contrário, ela será **local** dentro daquele escopo de código.
-
-Vejamos um exemplo:
-
-```python
-n = 100
-print(n) # 100
-for i in range(10):
-    n = i * 2
-    print(n) # 0, 2, 4,  6, 8, 10, 12, 14, 16, 18
-print(n) # 18, pois a variável n foi redefinida dentro do bloco for
-```
-
-Veremos mais sobre escopo de variáveis quando estudarmos funções, onde teremos que ser mais atenciosos com variáveis locais e globais.
-
-Caso removamos a primeira linha:
-
-```python
-print(n) # 100
-for i in range(10):
-    n = i * 2
-    print(n) # 0, 2, 4,  6, 8, 10, 12, 14, 16, 18
-print(n) # 18, pois a variável n foi CRIADA dentro do bloco for
-```
-
 ### Break, continue e pass
 
 O Python possui três palavras reservadas que podem ser utilizadas para alterar o fluxo de estruturas de repetição. São elas `break`, `continue` e `pass`.
