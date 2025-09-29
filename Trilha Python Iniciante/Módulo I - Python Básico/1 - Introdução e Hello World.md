@@ -1,4 +1,4 @@
-# Trilha Python - Symon Bezerra
+# Trilha Python Iniciante - Symon Bezerra
 ## Módulo I - Python Básico → Introdução e Hello World
 
 Seja bem vindo ao fantástico mundo da programação em Python. Aqui você aprenderá os conhecimentos necessários sobre lógica de programação para se tornar um desenvolvedor nesta linguagem que já é uma das mais populares, se não a mais popular do mundo da computação.

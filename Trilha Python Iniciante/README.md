@@ -3,7 +3,7 @@
 
 Este módulo se dedica a ensinar as técnicas básicas da linguagem Python, a saber, suas estruturas de código principais (comuns a diversas linguagens de programação), bem como ferramentas e conhecimentos que vão te tornar um desenvolvedor mais completo, antes de introduzirmos ferramentas específicas do ecossistema Python.
 
-Teremos nessa trilha os cursos: 
+Teremos nessa trilha os módulos: 
 
 1. Python Básico
 2. Programação Orientada a Objetos
