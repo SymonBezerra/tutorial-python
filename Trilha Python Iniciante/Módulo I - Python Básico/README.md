@@ -1,4 +1,4 @@
-# Curso Python Básico
+# Módulo Python Básico
 ## Tutorial Python - Symon Bezerra
 
 Seja bem vindo ao módulo Python Básico, onde você aprenderá as bases da linguagem de programação Python. Este curso está inserido na trilha **Python Iniciante**, sendo o primeiro da mesma.

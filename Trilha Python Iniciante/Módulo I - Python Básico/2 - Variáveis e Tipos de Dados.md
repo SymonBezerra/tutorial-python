@@ -42,7 +42,7 @@ logic_value = True # ou False
 print(type(logic_value)) # Saída: <class 'bool'>
 ```
 
-Falemos agora sobre duas coisas a respeito das variáveis. Nestes tutoriais, usaremos como padrão nomes de variáveis em inglês, o que pode evitar a troca de referência (*code switching*) entre textos em português e inglês. Além disso, observe como está escrita a variável `logic_value`: ela segue um padrão chamado *snake case*, que escreve nomes de variáveis sempre minúsculos e com palavras separadas por vírgulas. Alguns tipos de convenções de escrita de referências em programação são:
+Falemos agora sobre duas coisas a respeito das variáveis. Nestes tutoriais, usaremos como padrão nomes de variáveis em inglês, o que pode evitar a troca de referência (*code switching*) entre textos em português e inglês. Além disso, observe como está escrita a variável `logic_value`: ela segue um padrão chamado *snake case*, que escreve nomes de variáveis sempre minúsculos e com palavras separadas por *underlines* (`_`). Alguns tipos de convenções de escrita de referências em programação são:
 
 - *Snake case*: `logic_value`, `new_value`
     + No Python, é utilizado para nomes de variáveis e funções
@@ -88,7 +88,7 @@ Todas as operações acima possui como operandos (isto é, os valores submetidos
 Por quê? A diferença entre tipos de dados está no número de *bits* (casas binárias) utilizados para armazenar cada variável:
 
 - O tipo `str` é uma coleção de caracteres, geralmente 8 bits por caractere
-- Já o tipo `int` geralmente utiliza 28 bits ($-2^{16}$ até $2^{16} - 1$)
+- Já o tipo `int` geralmente utiliza 28 bits ($-2^{14}$ até $2^{14} - 1$)
 - O tipo `float` utiliza 64 bits
 - O tipo `booleano` utiliza o mesmo tamanho do tipo inteiro, apesar de poder ser representado por um único bit
 
@@ -146,7 +146,7 @@ O estilo antigo converte um valor para um dos tipos primitivos, segundo estas co
 - `%f` - valor `float`
     + para especificar o número de casas decimais: `%.2f` (para duas casas decimais, como por exemplo, imprimir moedas)
 
-    + para imprimir apenas a parte inteira, `$.0f`
+    + para imprimir apenas a parte inteira, `%.0f`
 
 Já o estilo "novo" utiliza uma função chamada `format`:
 
@@ -184,7 +184,7 @@ price = 0.5
 print(f'Preço: {price:.2f})')
 ```
 
-Qual estilo usar? Isso depende da preferência de cada programador, no entanto, às vezes um estilo específico pode tornar a interpolação de *strings* mais limpa, dependendo do caso. Suponhamos a escrita de uma *string* que fosse passada como comando a um terminal, onde houvesse diversas aspas. Neste caso, o estilo antigo pode tornar o código mais legível. Ou digamos que o nosso código seja executado em versões do Python pré-3.6: a compatibilidade pode ser alcançada usando a função `format`.
+Qual estilo usar? O estilo de *f-strings* parece ser mais fácil e amigável para iniciantes, porém isso depende da preferência de cada programador. Contudo, às vezes um estilo específico pode tornar a interpolação de *strings* mais limpa, dependendo do caso. Suponhamos a escrita de uma *string* que fosse passada como comando a um terminal, onde houvesse diversas aspas. Neste caso, o estilo antigo pode tornar o código mais legível. Ou digamos que o nosso código seja executado em versões do Python pré-3.6: a compatibilidade pode ser alcançada usando a função `format`.
 
 Há uma última observação para ser feita sobre *strings*: como escrever aspas simples ou duplas nelas, se elas também são o delimitador das próprias *strings*? Entram aí os **caracteres de escape**. O primeiro caractere de escape delimita um salto de linha:
 
