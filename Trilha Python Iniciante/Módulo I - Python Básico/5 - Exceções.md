@@ -5,6 +5,8 @@ Vimos nós últimos tutoriais sobre estruturas de controle, a saber, estruturas 
 
 > No ecossistema Python, as exceções são comumente nomeadas como *Errors*.
 
+### Como tratar erros
+
 Vejamos um caso de um programa simples que pode causar uma exceção:
 
 ```python
@@ -104,7 +106,7 @@ if num2 == 0:
     raise ValueError('O divisor deve ser diferente de zero!')
 ```
 
-## O conceito de *call stack*
+### O conceito de *call stack*
 
 É importante entendermos um conceito fundamental na programação para compreendermos bem como funcionam e como são tratadas as exceções: a **pilha de chamadas** ou ***call stack***. Um programa de computador é basicamente uma estrutura de pilha (onde o primeiro que entra é o último a sair, e vice versa - *last in, first out*). Quando uma função - assunto do próximo tutorial, mas que será introduzido aqui brevemente - é chamada, como a função `input` ou `print`, uma chamada é adicionada na *call stack*. E após o término desta função, ela deixa a pilha e retorna para a função anterior, até que o programa encerre e a chamada original seja finalizada.
 
