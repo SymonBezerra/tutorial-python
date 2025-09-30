@@ -33,6 +33,8 @@ def is_prime_number(num):
     return False
 ```
 
+> É possível também usar um `return` sozinho, que retorna por padrão um `None`.
+
 Podemos atribuir valores a partir destas funções:
 
 ```python
