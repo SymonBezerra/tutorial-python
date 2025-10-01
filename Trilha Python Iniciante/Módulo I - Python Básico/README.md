@@ -15,5 +15,6 @@ O módulo terá a seguinte estrutura:
 6. Funções
 7. Coleções
 8. Manipulação de *Strings*
-9. Bibliotecas
-10. Tipos Complexos - Introdução à Orientação a Objetos
+9. Manipulação de Arquivos
+10. Bibliotecas
+11. Tipos Complexos - Introdução à Orientação a Objetos

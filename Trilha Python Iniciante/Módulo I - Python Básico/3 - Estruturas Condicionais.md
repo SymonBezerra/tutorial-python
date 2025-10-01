@@ -55,7 +55,7 @@ elif number2 % 2 == 0: # se o número for par
     print('Segundo número é par')
 ```
 
-> O operador `==` é um operador relacional de comparação (compara se dois valores são iguais).
+> O operador `==` é um operador relacional de comparação (compara se dois valores são iguais). Para diferenciar dois valores, usamos o operador `!=`.
 
 Ou seja, se o valor de `number` for maior que zero, a segunda instrução, que é um `elif`, será simplesmente ignorada. O mais adequado, neste caso, seria usarmos duas instruções `if`:
 
