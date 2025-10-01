@@ -70,6 +70,8 @@ const_values = (1,2,3)
 
 for i in const_values: # iterável
     print(const_values[i])
+
+const_value = (1,) # para definirmos uma tupla de apenas um valor, utilizamos uma vírgula
 ```
 
 Tuplas são mais apropriadas quando queremos passar valores fixos. Um exemplo seria:
@@ -196,6 +198,15 @@ first, second, third = array
 print(first) # 1
 print(second) # 2
 print(third) # 3
+```
+
+Uma última observação sobre coleções mutáveis: podemos alterar uma lista, por exemplo, sem que ela faça parte do escopo local de uma função:
+
+```python
+array = [1,2,3]
+
+def add(n)
+    array.append(n) # o mesmo não seria possível com uma variável comum
 ```
 
 ## Listas e dicionários em uma única linha: *list* e *dict comprehension*
