@@ -9,7 +9,7 @@ Variáveis comuns podem armazenar um único valor. Em resumo, elas são ponteiro
 
 Comecemos pela estrutura de dados primordial, a lista. Basicamente, ela coloca elementos um ao lado do outro, como em uma prateleira. Listas são declaradas no Python através de colchetes (`[]`), ou através da função `list`:
 
-> Em outras linguagens, listas são chamadas de `arrays` (vetores).
+> Em outras linguagens, como no C, listas são chamadas de `arrays` (vetores).
 
 ```python
 empty_list = list() # lista vazia
@@ -209,7 +209,7 @@ def add(n)
     array.append(n) # o mesmo não seria possível com uma variável comum
 ```
 
-## Listas e dicionários em uma única linha: *list* e *dict comprehension*
+### Listas e dicionários em uma única linha: *list* e *dict comprehension*
 
 Provavelmente você já deve ter visto em alguma aula de matemática a declaração de um conjunto como $ A = \{x | x > 0\} $, neste caso, o conjunto dos inteiros positivos. Podemos utilizar uma sintaxe similar para construir listas e dicionários a partir de outros objetos iteráveis, ou seja, de outras coleções. Vejamos um exemplo:
 
@@ -258,7 +258,7 @@ f_matrix = [
 ]
 ```
 
-## Bônus: `*args` e `**kwargs` em funções
+### Bônus: `*args` e `**kwargs` em funções
 
 Vimos no último tutorial que podemos utilizar argumentos com valores padrão na assinatura de funções. Isto está diretamente ligado às coleções que acabamos de ver. Por exemplo: como uma função `print` consegue concatenar as *strings* separadas por vírgulas (ou seja, receber infinitos argumentos e concatená-los)? Podemos replicar este comportamento numa função de soma de números, por exemplo:
 
@@ -296,7 +296,9 @@ def add(n1, n2):
     return n1 + n2
 
 values = (1,2)
+dict_values = {'n1': 2, 'n2': 3}
 print(add(*values)) # equivalente de add(1,2)
+print(add(**dict_values)) # equivalente de add(n1=2, n2=3)
 ```
 
 No próximo tutorial, veremos mais sobre como manipular *strings*. Por hora, pratique seus novos conhecimentos sobre coleções, pois eles abrem um mundo de possibilidades de novas implementações! Bons estudos!
