@@ -18,10 +18,10 @@ Para abrir este arquivo, utilizaremos o seguinte código:
 
 ```python
 # para isto, o script Python deve estar na mesma pasta do arquivo
-file = open('arquivo.txt')
+file = open('./arquivo.txt')
 content = file.read() # lê o arquivo como uma string única
 print(content) # imprime o conteúdo do arquivo
-file.close()
+file.close() # fecha o arquivo
 ```
 
 Se quisermos realizar uma segunda leitura do arquivo, precisamos usar a função `seek` para retornar o ponteiro de memória para o começo do arquivo:
@@ -55,5 +55,17 @@ with open('arquivo2.txt', 'a') as file:
     content = 'Meu primeiro arquivo criado com Python\n=D'
     file.write(content)
 ```
+
+Podemos também utilizar um loop `for` para percorrer as linhas do nosso arquivo:
+
+```python
+# Valor padrão de codificação: UTF-8
+with open('arquivo.txt', encoding='utf-8') as file:
+    for line in file: # percorre cada linha do arquivo
+        print(line)
+    file.seek(0) # caso desejemos fazer outra operação com o mesmo arquivo
+```
+
+> Um outro exemplo de codificação comum é a codificação `latin-1`. Isto será especialmente importante para lidarmos com arquivos em análise de dados, como o formato CSV.
 
 No próximo tutorial, veremos como estender as funcionalidades do nosso interpretador com módulos extras, as chamadas bibliotecas. Bons estudos!
