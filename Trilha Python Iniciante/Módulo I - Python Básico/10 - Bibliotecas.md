@@ -12,8 +12,6 @@ import math
 
 print(math.sqrt(100)) # 10.0 → raiz quadrada
 print(math.cbrt(1000)) # 10.0 → raiz cúbica
-print(math.round(5.5)) # 5 → arredondamento
-print(math.round(100.2345, 2)) # arredondamento para duas casas decimais
 print(math.floor(100.5)) # 100 → arredondamento para o primeiro inteiro abaixo
 print(math.ceil(100.5)) # 101 → arredondamento para o primeiro inteiro acima
 print(math.exp(5)) # e^5
@@ -61,7 +59,7 @@ Algumas bibliotecas que já vêm instaladas junto do interpretador Python e que 
 Para a instalação de bibliotecas externas, temos duas ferramentas:
 
 - O gerenciador de pacotes do Python, o `pip`, que realiza o *download* e a instalação de bibliotecas adicionais no nosso interpretador.
-- O ambiente virtual (<em><strong>v</strong>irtual <strong>env</strong>ironment<em>, ou `venv`), que gera uma instalação isolada para que possamos instalar versões específicas de bibliotecas num pacote de bibliotecas.
+- O ambiente virtual (<em><strong>v</strong>irtual <strong>env</strong>ironment</em>, ou `venv`), que gera uma instalação isolada para que possamos instalar versões específicas de bibliotecas num pacote de bibliotecas.
 
 > A utilização de `venv`'s é uma boa prática, pois com a atualização das bibliotecas, funcionalidades que implementamos com versões anteriores podem se tornar inutilizáveis.
 
