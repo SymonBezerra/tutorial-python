@@ -163,7 +163,7 @@ if __name__ == '__main__': # __...__ → "dunder" (double underscore)
     print('Este script é uma biblioteca, não deve ser executado sozinho')
 ```
 
-O que esta linha de código faz é acessar a variável `__name__` (uma variável do próprio interpretador, por isso marcada pelo *dunder*) e, se o valor desta variável for `__main__` (ou seja, se o *script* for executado sozinho ao invés de ser importado por outro arquivo de código), o bloco de código será executado.
+O que esta linha de código faz é acessar a variável `__name__` (uma variável atribuídas pelo próprio interpretador, por isso marcada pelo *dunder*) e, se o valor desta variável for `__main__` (ou seja, se o *script* for executado sozinho ao invés de ser importado por outro arquivo de código), o bloco de código será executado.
 
 Isto significa que o primeiro `print` será executado sempre, seja ao importar o *script* como biblioteca, seja ao executá-lo sozinho. Isto é bastante útil para testarmos funcionalidades das nossas bibliotecas em estruturas mais simples.
 
