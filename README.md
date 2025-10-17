@@ -20,7 +20,7 @@ Como aprofundamento, aprenderemos sobre a programação orientada a objetos na l
 
 ### Módulo III - Ambiente de Desenvolvimento
 
-Como próximo passo, prepararemos o estudante para construir ambientes virtuais de desenvolvimento, e também apresentaremos algumas módulos utilitários da linguagem Python. 
+Como próximo passo, prepararemos o estudante para construir ambientes virtuais de desenvolvimento, e também apresentaremos algumas módulos utilitários da linguagem Python.
 
 ### Módulo IV - Estrutura de Dados
 
