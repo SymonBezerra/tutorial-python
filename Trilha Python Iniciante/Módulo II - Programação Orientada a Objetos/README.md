@@ -9,9 +9,10 @@ O módulo terá a seguinte estrutura:
 
 1. Introdução
 2. Encapsulamento
-3. Herança
-4. Polimorfismo
-5. Classes abstratas
-6. *Duck typing*
-7. Padrões de design
-8. Introdução a SOLID
+3. Atributos e métodos estáticos
+4. Herança
+5. Polimorfismo
+6. Classes abstratas
+7. *Duck typing*
+8. Padrões de design
+9. Introdução a SOLID
