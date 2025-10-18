@@ -3,7 +3,7 @@
 
 No último tutorial, vimos como utilizar bibliotecas externas à `stdlib` e também como instalar módulos adicionais utilizando o `pip`. A grande maioria das bibliotecas, ou melhor dizendo, até mesmo a grande maioria dos módulos nativos do Python se baseiam em uma forma de programar fundamentada na definição de tipos complexos: a **orientação a objetos** (OO).
 
-Teremos o próximo módulo da **Trilha Python Iniciante** completamente dedicado a este assunto. No entanto, gostaríamos de fazer uma breve introdução à OO, visto que este é um tópico fundamental para dominar conceitos mais avançados de qualquer linguagem de programação.
+Teremos um próximo módulo da **Trilha Python Iniciante** que será completamente dedicado a este assunto. No entanto, gostaríamos de fazer uma breve introdução à OO, visto que este é um tópico fundamental para dominar conceitos mais avançados de qualquer linguagem de programação.
 
 ### Definindo tipos complexos
 
