@@ -1,6 +1,8 @@
 # Trilha Python Iniciante - Symon Bezerra
 ## Módulo II - Programação Orientada a Objetos → Introdução
 
+> Recomendamos fortemente que você leia também o tutorial 11 do **Módulo Python Básico** desta mesma trilha, pois ele contém uma introdução mais detalhada à orientação a objetos.
+
 Seja bem vindo ao segundo módulo da **Trilha Python Iniciante**! Hoje daremos início aos nossos estudos sobre **Programação Orientada a Objetos**, um paradigma essencial para entender diversas linguagens de programação, e especialmente compreender o ecossistema Python.
 
 Neste módulo, buscaremos entender desde os conceitos básicos do paradigma até padrões de indústria que te tornarão um desenvolvedor cada vez mais completo no ecossistema Python.
@@ -36,11 +38,9 @@ Um objeto é uma unidade de programação que define em si atributos e funções
 
 Vamos instanciar um objeto do tipo `Carro`: um carro possui uma marca, modelo e ano de fabricação - estes seriam seus **atributos**. Algumas funcionalidades de um carro seriam ligar, desligar, acelerar e freiar. Dados estes **comportamentos**, podemos definir um atributo booleano que diz se o carro está ou não ligado, e um atributo inteiro para representar sua velocidade.
 
-> Para detalhes sobre construtores e métodos, 
-
 ```python
 class Car:
-    def __init__(self, brand, model,  year):
+    def __init__(self, brand, model,  year): # construtor
         self.brand = brand # marca
         self.model = model # modelo
         self.year = year # ano de fabricação
@@ -59,14 +59,21 @@ class Car:
 
     def accelerate(self): # acelerar
         print('Acelerando')
-        self.speed += 10
+        if self.is_started:
+            self.speed += 10
 
     def brake(self): # freiar
         if self.speed > 0:
             print('Freiando')
             self.speed -= 10
+
+car = Car('Fiat', 'Uno', 1996) # chamando o construtor
+car.start() # Dar partida
+car.accelerate() # Acelerar
+car.brake() # Freiar
+car.turn_off() # Desligar
 ```
 
-Muita informação de uma única vez, certo? Então, vamos com calma. O que definimos aqui é uma unidade de programação que contém variáveis e funções vinculadas a si, ou seja, um **objeto**.
+Muita informação de uma única vez, certo? Então, vamos com calma. O que definimos aqui é uma unidade de programação que contém variáveis e funções vinculadas a si, ou seja, um **objeto**. Temos a função `__init__`, o nosso **construtor**, que recebe alguns parâmetros como qualquer função. O primeiro deles é o parâmetro `self`, isto é, o argumento da própria instância que está chamando o construtor. Como atributos desta instância, serão colocados as variáveis da chamada do construtor (ex.: `self.brand = brand`), além de outras duas que não estão no construtor (`is_started` e `speed`). Daí, criamos nossos **métodos**, isto é, as funções vinculadas ao objeto, que são os seus **comportamentos**, manipulando os atributos do próprio objeto.
 
-**(WORK IN PROGRESS)**
+Daqui para a frente, veremos cada vez mais como criar e manipular objetos em Python. Este conhecimento será de fundamental importância para dominarmos conceitos e técnicas mais avançadas de programação. Bons estudos!
